@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from showcase import *
-from ide import *
+from ida import *
 from about_us import *
 
 def navbar():
@@ -9,14 +9,14 @@ def navbar():
     with st.sidebar:
         selected = option_menu(
             menu_title= "Team 1: JAD Solutions",
-            options = ["Showcase", "IDE", "About us"]
+            options = ["Showcase", "IDA", "About us"]
         )
 
     if selected == "Showcase":
         showcase()
 
-    if selected == "IDE":
-        ide()
+    if selected == "IDA":
+        ida()
 
     if selected == "About us":
         about_us()
