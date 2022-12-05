@@ -1,9 +1,7 @@
+#https://davidsiltroy-python-big-data-image-classification-main-op94jq.streamlit.app/
 import streamlit as st
+from navbar import *
 
-st.header('Thomas More - Big Data Team Assigment: Image Classification')
 
-st.write("Here is going to be an Epic/Awesome image classificatior program!")
-
-body = st.container()
-body.write("Coming soon.... (in Winter)")
-
+if __name__=='__main__':
+    navbar()
