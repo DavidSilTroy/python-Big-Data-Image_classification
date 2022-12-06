@@ -1,5 +1,5 @@
 import streamlit as st
-import pathlib
+from pathlib import Path
 from PIL import Image
 from io import BytesIO, StringIO
 
