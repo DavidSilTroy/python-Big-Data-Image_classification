@@ -13,15 +13,15 @@ def showcase():
 
     model_name='tanks.pkl'
 
-    
-    pathlib.PosixPath = pathlib.WindowsPath
+    plt = platform.system()
+    if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
     model = load_learner(pathlib.Path()/model_name)
 
     image = st.file_uploader("Upload file", type=["png","jpg","jpeg"])
     show_image = st.empty()
 
     if not image:
-        show_image.info("Choose a file to upload, only type: " + ", ".join(["png","jpg","jpeg"]))
+        show_image.info("Choose a file to upload, only type: png, jpg, jpeg ")
         return
     else:
         image = PILImage.create((image))
