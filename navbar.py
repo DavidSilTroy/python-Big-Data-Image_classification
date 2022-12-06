@@ -9,13 +9,13 @@ def navbar():
     with st.sidebar:
         selected = option_menu(
             menu_title= "Team 1: JAD Solutions",
-            options = ["Showcase", "IDA", "About us"]
+            options = ["Showcase", "EDA", "About us"]
         )
 
     if selected == "Showcase":
         showcase()
 
-    if selected == "IDA":
+    if selected == "EDA":
         ida()
 
     if selected == "About us":
