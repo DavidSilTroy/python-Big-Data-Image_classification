@@ -13,12 +13,13 @@ def showcase():
 
     model_name='tanks.pkl'
 
-    try:
-        temp = pathlib.PosixPath
-        pathlib.PosixPath = pathlib.WindowsPath
-    except:
-        model = load_learner(Path()/model_name)
-
+    # try:
+    #     temp = pathlib.PosixPath
+    #     pathlib.PosixPath = pathlib.WindowsPath
+    # except:
+    #     model = load_learner(Path()/model_name)
+    # finally:
+    #     model = load_learner(Path()/model_name)
     model = load_learner(Path()/model_name)
 
     image = st.file_uploader("Upload file", type=["png","jpg","jpeg"])
