@@ -1,5 +1,5 @@
 import streamlit as st
-from pathlib import Path
+import pathlib
 from PIL import Image
 from io import BytesIO, StringIO
 
@@ -13,14 +13,9 @@ def showcase():
 
     model_name='tanks.pkl'
 
-    # try:
-    #     temp = pathlib.PosixPath
-    #     pathlib.PosixPath = pathlib.WindowsPath
-    # except:
-    #     model = load_learner(Path()/model_name)
-    # finally:
-    #     model = load_learner(Path()/model_name)
-    model = load_learner(Path()/model_name)
+    
+    pathlib.PosixPath = pathlib.WindowsPath
+    model = load_learner(pathlib.Path()/model_name)
 
     image = st.file_uploader("Upload file", type=["png","jpg","jpeg"])
     show_image = st.empty()
