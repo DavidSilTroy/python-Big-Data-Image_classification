@@ -3,7 +3,7 @@ import os
 from PIL import Image
 
 
-def ida():
+def eda():
     st.header('Thomas More - Big Data Team Assigment: Image Classification - EDA')
 
     data_path = 'data/'

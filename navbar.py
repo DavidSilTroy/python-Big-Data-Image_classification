@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from showcase import *
-from ida import *
+from eda import *
 from about_us import *
 
 def navbar():
@@ -16,7 +16,7 @@ def navbar():
         showcase()
 
     if selected == "EDA":
-        ida()
+        eda()
 
     if selected == "About us":
         about_us()
