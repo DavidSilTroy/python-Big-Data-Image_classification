@@ -3,3 +3,8 @@ streamlit_option_menu
 pillow
 fastbook
 pathlib
+
+#for api
+fastapi
+uvicorn[standard]
+python-multipart
