@@ -8,3 +8,7 @@ pathlib
 fastapi
 uvicorn[standard]
 python-multipart
+
+#for google drive
+#gdown
+requests
