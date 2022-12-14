@@ -6,12 +6,13 @@ from showcase import *
 from eda import *
 from about_us import *
 
+
 def navbar():
-    #1. as slidebar menu
+    # 1. as sidebar menu
     with st.sidebar:
         selected = option_menu(
-            menu_title= "Team 1: JAD Solutions",
-            options = ["Showcase", "EDA", "About us", "Google Drive"]
+            menu_title="Team 1: JAD Solutions",
+            options=["Showcase", "EDA", "About us", "Google Drive"]
         )
 
     if selected == "Showcase":
@@ -25,5 +26,3 @@ def navbar():
 
     if selected == "Google Drive":
         googledrive()
-        
-

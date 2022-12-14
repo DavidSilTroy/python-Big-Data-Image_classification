@@ -1,11 +1,11 @@
 import streamlit as st
-from PIL import Image
+
 
 def about_us():
     st.header('Thomas More Geel - Big Data')
     st.subheader('Team 1: JAD Solutions')
     # body =  st.container()
-    #body.write("Coming soon.... (in Winter)")
+    # body.write("Coming soon.... (in Winter)")
 
     col1, col2, col3 = st.columns(3)
     with col1:
